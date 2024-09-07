@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маркер и Заправляемый Маркер</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<div class="container">
+  <h1>Простой и заправляемый маркеры</h1>
+  <textarea id="textToPrint" placeholder="Введите текст для печати"></textarea>
+  <br>
+  <button id="simpleMarkerBtn">Печать с простым маркером</button>
+  <button id="refillableMarkerBtn">Печать с заправляемым маркером</button>
+  <button id="refillBtn">Заправить маркер</button>
+  <p id="simpleInkLevel">Осталось чернил в простом маркере: <span id="simpleInk">20</span>%</p>
+  <p id="refillableInkLevel">Осталось чернил в заправляемом маркере: <span id="refillableInk">30</span>%</p>
+  <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
